@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="calculadora">
+        <p id="texto">Calculadora</p>
+        <p id="visor"></p>
+        <div>
+            <table id="tabela">
+                <tr>
+                    <td><button id="limpartudo" value="" onclick="limpar()">C</button></td>
+                    <td><button id="limpar" value="&lt" onclick="voltar()">&lt;</button></td>
+                    <td><button class="operador" value="/" onclick="putnum('/')">/</button></td>
+                    <td><button class="operador" value="x" onclick="putnum('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" value="7" onclick="putnum(7)">7</button></td>
+                    <td><button class="num" value="8" onclick="putnum(8)">8</button></td>
+                    <td><button class="num" value="9" onclick="putnum(9)">9</button></td>
+                    <td><button class="operador" value="-" onclick="putnum('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" value="4" onclick="putnum(4)">4</button></td>
+                    <td><button class="num" value="5" onclick="putnum(5)">5</button></td>
+                    <td><button class="num" value="6" onclick="putnum(6)">6</button></td>
+                    <td><button class="operador" value="+" onclick="putnum('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" value="1" onclick="putnum(1)">1</button></td>
+                    <td><button class="num" value="2" onclick="putnum(2)">2</button></td>
+                    <td><button class="num" value="3" onclick="putnum(3)">3</button></td>
+                    <td rowspan="2"><button class="resultado1" value="=" onclick="conta()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="num0" value="0" onclick="putnum(0)">0</button></td>
+                    <td><button class="num" value="." onclick="putnum('.')"><strong>.</strong></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
